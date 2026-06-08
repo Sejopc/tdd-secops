@@ -61,7 +61,7 @@ class SentinelTestFramework:
         try:
             with open(test_file, 'r') as file:
                 config = yaml.safe_load(file)
-                print(f"Loaded test configuration: {json.dumps(config, indent=2)}")
+                print(f"Loading test configuration: {json.dumps(config, indent=2)}")
                 print("Loaded test configuration")
                 return config
         except Exception as e:
